@@ -1,0 +1,9 @@
+-- EJEMPLO para ejecutar por un administrador MySQL con permisos CREATE USER/GRANT.
+-- Sustituir el marcador de contraseña FUERA del repositorio antes de ejecutar.
+-- En Aiven, la capacidad de crear usuarios/otorgar permisos depende del servicio.
+-- CREATE USER 'cafeteria_app'@'%' IDENTIFIED BY 'CAMBIAR_POR_CONTRASENA_FUERTE';
+-- GRANT SELECT ON cafeteria_express.* TO 'cafeteria_app'@'%';
+-- GRANT EXECUTE ON cafeteria_express.* TO 'cafeteria_app'@'%';
+-- REVOKE INSERT, UPDATE, DELETE ON cafeteria_express.* FROM 'cafeteria_app'@'%';
+-- SHOW GRANTS FOR 'cafeteria_app'@'%';
+-- Los SP se crean con el usuario administrador; verificar SQL SECURITY DEFINER.

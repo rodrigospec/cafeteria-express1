@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+*.key
+ca.pem
+aiven-config.php
+.DS_Store
+config/admin-auth.php
